@@ -7,6 +7,66 @@
      <title> AlteraCraft </title>
      <link rel="icon" type="image/x-icon" href="images/favicon.png">
      <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+     <style>
+        .parallax {
+          /* The image used */
+          background-image: url("images/im2.png");
+        
+          /* Set a specific height */
+          min-height: 500px;
+        
+          /* Create the parallax scrolling effect */
+          background-attachment:fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size:cover;
+        }
+        .parallax2 {
+          /* The image used */
+          background-image: url("images/im3.png");
+        
+          /* Set a specific height */
+          min-height: 500px;
+        
+          /* Create the parallax scrolling effect */
+          background-attachment:fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size:cover;
+        }
+        .parallax3 {
+          /* The image used */
+          background-image: url("images/im4.png");
+        
+          /* Set a specific height */
+          min-height: 500px;
+        
+          /* Create the parallax scrolling effect */
+          background-attachment:fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size:cover;
+
+        }
+        .parallax4 {
+          /* The image used */
+          background-image: url("images/im5.png");
+        
+          /* Set a specific height */
+          min-height: 500px;
+        
+          /* Create the parallax scrolling effect */
+          background-attachment:fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size:cover;
+        }
+        rect{
+            display: inline-block;
+            line-height: 80px;
+            margin: 20px 30px;
+        }
+        </style>
     </head>
     <body>
         <nav>
@@ -15,24 +75,46 @@
                 <li><a class="active" href="#">Home</a></li>
                 <li><a target="_blank" href="https://platby.hostify.cz/70746">Obchod</a></li>
                 <li><a href="about.html">O nás</a></li>
-                <li><button class="discord" onclick="myFunction()">s</button></li>
+                <li><button class="discord" onclick="location.href='https://discord.gg/QbQmRhFGeD';">s</button></li>
                 <li><button class="ip" onclick="myFunction()">alteracraft.mc.hostify.cz</button></li>
             </ul>        
         </nav>
-
-        <pict><img src="images/im2.png" alt=""></pict>
+        <rect></rect>
+        <div class="parallax"></div>
+        <rect></rect>
+        <h1>Vlastní Vymoženosti</h1>
         <p2>
-            <h1>Vlastní Vymoženosti</h1>
-            <p>Server nabízí spousty vylepšených věcí</p>
-            <p>jakožto například:</p>
-            <p> Peti, dovednosti a staty, lepší generace světa</p>
-            .
-            <p> vlastní crafting, questy, lepší mobové </p>
+            
+            <p>Server obsahuje různé vylepšení, jak malé, tak i velké.</p>
+            <p>Pokračuj dále pro menší zasvěcení.</p>
+            <rect></rect>
+        </p2>
+        <div class="parallax2"></div>
+        <p2>
+            <h1>Vlastní generace světa</h1>
+            <p>Svět nebyl nikdy větší a hezčí. Díky residencím se nemusíš </p> 
+            <p>bát o své místečko. Neváhej, prozkoumávej a stav.</p> 
+            <rect></rect>
+        </p2>
+        <div class="parallax3"></div>
+        <p2>
+            <h1>Mazlíčci</h1>
+            <p>Ochoč si libovolného moba, vyber si jeho specialní dovednost</p> 
+            <p>a například si ho zavolej do boje, či se na něm projet.</p>
+            <rect></rect>
+        </p2>
+        <div class="parallax4"></div>
+        <p2>
+            <h1>Dovednosti a úrovně mobů</h1>
+            <p>Veškeré nepřátelské mobky mají úrovně, takže jsou težší.</p> 
+            <p>Ale neboj, přes dovednosti si můžeš zvýšit staty.</p>
+            <rect></rect>
         </p2>
           <script>
             function myFunction() {
              // Copy the text inside the text field
             navigator.clipboard.writeText("alteracraft.mc.hostify.cz");
+            alert("IP adresa serveru byla zkopírována");
           } 
         </script>
     </body>
