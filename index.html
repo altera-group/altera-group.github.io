@@ -6,114 +6,111 @@
      <link rel="stylesheet" href="style.css">
      <title> AlteraCraft </title>
      <link rel="icon" type="image/x-icon" href="images/favicon.png">
-     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+     <script src="https://kit.fontawesome.com/39500cc296.js" crossorigin="anonymous"></script>
      <style>
-        .parallax {
-          /* The image used */
-          background-image: url("images/im2.png");
-        
-          /* Set a specific height */
-          min-height: 500px;
-        
-          /* Create the parallax scrolling effect */
-          background-attachment:fixed;
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size:cover;
+        button{
+          float: right;
+          margin: 1% 1%;
+          background-color: #cd115600;
+          padding: 10px 10px;
+          text-transform: uppercase;
+          border: 3px solid #ffffff;;
+          border-radius: 20px;
+          font-size: 20px;
+          font-weight: bold;
+          color: rgb(255, 255, 255);  
+          transition: .5s;
+    
+          }
+          button:hover{
+              border: 3px solid rgb(255, 91, 156);
+              transition: .5s;
+          }
+        #img1{
+            background-image: url("images/im3.png");
         }
-        .parallax2 {
-          /* The image used */
-          background-image: url("images/im3.png");
-        
-          /* Set a specific height */
-          min-height: 500px;
-        
-          /* Create the parallax scrolling effect */
-          background-attachment:fixed;
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size:cover;
+        #img2{
+            background-image: url("images/im4.png");
         }
-        .parallax3 {
-          /* The image used */
-          background-image: url("images/im4.png");
-        
-          /* Set a specific height */
-          min-height: 500px;
-        
-          /* Create the parallax scrolling effect */
-          background-attachment:fixed;
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size:cover;
-
-        }
-        .parallax4 {
-          /* The image used */
-          background-image: url("images/im5.png");
-        
-          /* Set a specific height */
-          min-height: 500px;
-        
-          /* Create the parallax scrolling effect */
-          background-attachment:fixed;
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size:cover;
-        }
-        rect{
-            display: inline-block;
-            line-height: 80px;
-            margin: 20px 30px;
-        }
-        </style>
+        #img3{
+            background-image: url("images/im5.png");
+         }
+     </style>
     </head>
     <body>
-        <nav>
-            <label class="logo">AlteraCraft</label>
-            <ul>
-                <li><a class="active" href="#">Home</a></li>
-                <li><a target="_blank" href="https://platby.hostify.cz/70746">Obchod</a></li>
-                <li><a href="about.html">O nás</a></li>
-                <li><button class="discord" onclick="location.href='https://discord.gg/QbQmRhFGeD';">s</button></li>
-                <li><button class="ip" onclick="myFunction()">alteracraft.mc.hostify.cz</button></li>
-            </ul>        
-        </nav>
-        <rect></rect>
-        <div class="parallax"></div>
+        <img src="images/ad.png" class="logo"></images>
+        <button onclick="location.href='home.html';">Přejít na hlavní stránku <i class="fa-solid fa-angles-right" style="color: #ffffff;"></i></button>
+        <div id="demo"></div>
+        <div class="parallax" id="1"></div>
         <rect></rect>
         <h1>Vlastní Vymoženosti</h1>
         <p2>
-            
-            <p>Server obsahuje různé vylepšení, jak malé, tak i velké.</p>
-            <p>Pokračuj dále pro menší zasvěcení.</p>
+            <p>Kosmetické věci, Residence, /home, teleportační runy,</p> 
+            <p>Votes, Shop, Loot, ...</p>
             <rect></rect>
         </p2>
-        <div class="parallax2"></div>
+        <div class="parallax" id="img1"></div>
+        <rect></rect>
+        <h1>Vylepšený svět | Residence </h1>
         <p2>
-            <h1>Vlastní generace světa</h1>
             <p>Svět nebyl nikdy větší a hezčí. Díky residencím se nemusíš </p> 
             <p>bát o své místečko. Neváhej, prozkoumávej a stav.</p> 
             <rect></rect>
         </p2>
-        <div class="parallax3"></div>
+        <div class="parallax" id="img2"></div>
+        <rect></rect>
+        <h1>Mazlíčci | Talenty | Specializace</h1>
         <p2>
-            <h1>Mazlíčci</h1>
-            <p>Ochoč si libovolného moba, vyber si jeho specialní dovednost</p> 
-            <p>a například si ho zavolej do boje, či se na něm projet.</p>
+            <p>Ochoč si libovolného moba, vyber si jeho specialní dovednost a například si ho zavolej do boje,</p> 
+            <p>projeť se na něm, či ho využíj na loot.</p>
             <rect></rect>
         </p2>
-        <div class="parallax4"></div>
+        <div class="parallax" id="img3"></div>
+        <rect></rect>
+        <h1>Strom dovedností  |  Levely |  Dungeony</h1>
         <p2>
-            <h1>Dovednosti a úrovně mobů</h1>
-            <p>Veškeré nepřátelské mobky mají úrovně, takže jsou težší.</p> 
-            <p>Ale neboj, přes dovednosti si můžeš zvýšit staty.</p>
-            <rect></rect>
+            <p>Veškeré nepřátelské mobky mají úrovně, takže jsou težší na zabití.</p> 
+            <p>Ale nemusíš se obávat, přes dovednosti si můžeš zvýšit staty.</p>
+            
         </p2>
+
+        <footer>
+          <p>AlteraCraft © Produkt Altera.</p> 
+          <p>Nejsme nijak spříznění s Mojang, AB.</p> 
+          <p>2023</p> 
+        </footer>
           <script>
+            // Set the date we're counting down to
+var countDownDate = new Date("Jun 9, 2023 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
             function myFunction() {
              // Copy the text inside the text field
-            navigator.clipboard.writeText("alteracraft.mc.hostify.cz");
+            navigator.clipboard.writeText("play.alteracraft.eu");
             alert("IP adresa serveru byla zkopírována");
           } 
         </script>

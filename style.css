@@ -4,6 +4,8 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    letter-spacing: -1px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
 }
 
 
@@ -14,6 +16,100 @@ body{
     background-size: 100% 100%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
 }
+rect{
+    display: inline-block;
+    line-height: 80px;
+    margin: 20px 30px;
+}
+.parallax {
+    /* The image used */
+    background-image: url("images/im2.png");
+  
+    /* Set a specific height */
+    min-height: 200px;
+    padding-top: 30%;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment:fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+  #demo{
+    display: inline-block;
+    width: 100%;
+    margin: 10px 0;
+    padding-bottom: 5px;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px #212227;
+    text-align: center;
+    background-color: rgb(190, 8, 81);
+  }
+  #cosmetiky{
+    float:left;
+    margin: 4rem 15rem;
+    margin-right: 2rem;
+  }
+  .imgC{
+    height: 250px;
+    margin: 5px 5px;
+    margin-bottom: 3%;
+  }
+  #shop{
+    margin-top: 5%;
+  }
+.menu{
+    display: flex;
+    float: right;
+    flex-flow: row wrap;
+    row-gap: 10px;
+    justify-content: right;
+    margin: 2rem 12rem;
+    
+       }
+.menucolu{
+    display: flex;
+    flex-flow: column wrap;
+    row-gap: 10px;
+    justify-content: right; 
+    }
+.body-karta-menu{
+    display: flex;
+    border: 1px #ffffff solid;
+    margin: 2rem 2rem;
+    border-radius: 25px;
+    padding: 1rem 3rem;
+    background-color: #18191de0;;
+    flex-direction: column;
+    }
+.socky{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    }
+ #developer{
+    border-color: #335fff;
+ }
+ #builder{
+    border-color: #f1ff33;
+ }
+ #helper{
+    border-color: #44ff33;
+ }
+ #rest, #rest2{
+    display: block;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin: 10px 10px;
+    float: left;
+ }
+
+ 
 
 p2{
     display: block;
@@ -30,76 +126,199 @@ h1{
     text-align: center;
 }
 h2{
-    font-size: 50px;
+    font-size: 35px;
     font-weight: bold;
-    color: white;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px #212227;
+    line-height: 60px;
     text-align: center;
+    margin-top: 1%;
+    border: none;
+    border-radius: 5px;
+    border-bottom: 1px rgb(253, 255, 255) solid;
+    
 }
 p {
-    font-size: 25px;
+    font-size: 30px;
     color: white;
     text-align: center;
 }
 button.ip{
-    background-color: rgb(245, 81, 146);
-    padding: 7px 13px;
-    border: 5px solid rgb(245, 81, 146);
-    border-radius: 25px;
+    background-color: #cd115600;
+    padding: 7px 5px;
+    margin: 0 2%;
+    border: 3px solid #cd1156;;
+    border-radius: 20px;
     font-size: 20px;
     font-weight: bold;
     color: rgb(255, 255, 255);  
+    transition: .5s;
+    
 }
 button.ip:hover{
-    background-color: rgb(255, 11, 109);
-    border: 5px solid rgb(255, 11, 109);
+    border: 3px solid rgb(255, 91, 156);
     transition: .5s;
 }
 button.discord{
-    background-color: #7289da;
-    background-image: url(images/discord.svg);
-    background-size:contain;
-    background-repeat: no-repeat;
-    padding: 4px 15px;
-    border: 8px solid rgb(114, 137, 218);
+    background-color: #cd115600;
+    padding: 7px 1px; 
+    border: 3px solid rgb(84, 106, 185);
     border-radius: 20px;
     font-size: 20px;
+    text-align: center;
+    font-weight: bold;
     color: white;
+    transition: .5s;
+    
 }
 button.discord:hover{
-    background-color: #335fff;
-    border: 8px solid #335fff;
+    border: 3px solid rgb(150, 173, 255);
     transition: .5s;
 }
 
 nav{
+    
     background-color: rgb(22, 29, 30);
     height: 80px;
     width: 100%;
 }
-label.logo{
-    color: white;
-    font-size: 35px;
-    line-height: 80px;
-    padding: 0 100px;
-    font-weight: bold;
+.logo{
+    float: left;
+    height: 70px;
+    width: 315px;
+    display: block;
+    margin: auto auto 10px;
+
+
 }
 nav ul{
     float: right;
-    margin-right: 20px;
+    margin-right: 100px;
 }
 nav ul li{
-    display: inline-block;
-    line-height: 80px;
+    display: inline-flex;
+    
     margin: 0 5px;
+    padding: 25px 5px;
+    font-weight: bold;
 }
 nav ul li a{
     color: white;
-    font-size: 17px;
-    padding: 7px 13px;
-    border-radius: 5px;
+    font-size: 20px;
+    padding: 13px 13px;
+    border-radius: 15px;
     text-transform: uppercase;
+    transition: .5s;
 }
 a.active,a:hover{
-background-color: rgb(190, 8, 81);
+background-color: #cd1140;;
 transition: .5s;
+}
+footer{
+    position: sticky;
+    top: 100%;
+    margin-bottom: 10px;
+    background-color:  rgb(22, 29, 30);
+    display: block;
+    border: rgb(190, 8, 81) solid 2px;
+    width: 75%;
+    float: right;
+    margin-top: 5%;
+    margin-right: 12%;
+    border-radius: 25px;
+    padding: 25px;
+}
+
+@media screen and (max-width: 1470px) {
+    .logo{
+        padding: 0 10px;
+    }
+    nav ul{
+        margin-right: 0;
+    }
+    nav ul li a{ 
+        padding: 7px 7px;
+    }
+    .button.discord{
+        padding: 3px 3px;
+        justify-self: center;
+    }
+    button.ip{
+        padding: 3px 3px;
+        justify-self: center;
+    }
+    .menu{
+        justify-content: center;
+        row-gap: 2px;
+        margin-top: 5rem;
+        }
+    .menucolu{
+            gap: 2px;
+            justify-content: center;
+        }
+    .body-karta-menu{
+            margin: 0 0;
+            margin-bottom: 10px;
+        }
+}
+@media screen and (max-width: 500px) {
+    .logo{
+        float: none;
+        text-align: center;
+        justify-content: center;
+        padding: 0;
+    }
+    nav{
+        display: block;
+        height: 260px;
+    }
+    nav ul{
+        margin-right: 0;
+        }
+    nav ul li{
+        justify-self: center;
+        text-align: center;
+    }
+    nav ul li a{
+        justify-content: center;
+        width: 100%;
+        font-size: 18px;
+    }
+    .button.discord{
+        justify-self: center;
+    }
+    button.ip{
+        justify-self: center;
+    }
+    .parallax{
+        background-size: 150% 75%;
+        padding-top:0px;
+    }
+    h1{
+        font-size: 35px;
+    }
+    p{
+        font-size: 20px;
+    }
+    rect{
+        line-height: 50px;
+    }
+     .menu{
+    justify-content: center;
+    margin: 0 0;
+    }
+    .menucolu{
+        gap: 2px;
+        justify-content: center;
+    }
+    .body-karta-menu{
+        margin: 15px 35px;
+        margin-bottom: 10px;
+    }
+    .imgC{
+        height: 150px;
+    }
+    #cosmetiky{
+        margin: 0 0;
+    }
 }

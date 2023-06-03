@@ -7,27 +7,122 @@
      <title> AlteraCraft </title>
      <link rel="icon" type="image/x-icon" href="images/favicon.png">
      <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-     <style>body {
-        background-image: url(images/background.png);
-      }</style>
+     <style>
+        .ateam-obrazek {
+    height: 240px;
+    width: 150px;
+    display: block;
+    margin: auto auto 10px;
+       }
+       .ateam{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 25px;
+    justify-content: center;
+    margin-bottom: 5%;
+    
+       }
+       .body-karta{
+    display: block;
+    border: 1px rgb(190, 8, 81) solid;
+    margin-top: 5rem;
+    border-radius: 25px;
+    padding: 1rem 3rem;
+    background-color: #18191d;;
+       }
+      .jmeno{
+    color: white;
+    font-weight: bold;
+    font-size: 29px; 
+    text-align: center;
+    border: none;
+    border-bottom: 1px rgb(253, 255, 255) solid;
+    padding-bottom: 5px;
+       }
+      .rank{
+    color: white;
+    font-size: 22px; 
+    font-style: italic;
+    text-align: center;
+    margin-top: 3px;
+    margin-bottom: 15px;
+       }
+     </style>
+
     </head>
     <body>
         <nav>
-            <label class="logo">AlteraCraft</label>
+          <img src="images/ad.png" class="logo"></images>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="https://platby.hostify.cz/70746">Obchod</a></li>
-                <li><a class="active" href="#">O nás</a></li>
-                <li><button class="discord" onclick="location.href='https://discord.gg/QbQmRhFGeD';">s</button></li>
-                <li><button class="ip" onclick="myFunction()">alteracraft.mc.hostify.cz</button></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="dynmap.html">Dynmap</a></li>
+                <li><a target="_blank" href="https://platby.hostify.cz/70746">Shop</a></li>
+                <li><a target="_blank" href="#">Wiki</a></li>
+                <li><a class="active" href="about.html">Team</a></li>
             </ul>        
         </nav>
-          <script>
-            function myFunction() {
-             // Copy the text inside the text field
-            navigator.clipboard.writeText("alteracraft.mc.hostify.cz");
-            alert("IP adresa serveru byla zkopírována");
-          } 
-        </script>
+
+        <h2>Zakladatelé</h2>
+        <div class="ateam">
+
+  
+          <div class="body-karta" id="developer">
+            
+            <div class="jmeno">jara155</div>
+            <div class="rank">Developer</div>
+            <img src="https://visage.surgeplay.com/full/512/0a737aee1a6e4d8e985c86b30927c5d6" class="ateam-obrazek"/>
+
+          </div>
+
+          <div class="body-karta" id="owner">
+            
+            <div class="jmeno">PraguePirateCZ</div>
+            <div class="rank">Owner</div>
+            <img src="https://visage.surgeplay.com/full/512/8667ba71b85a4004af54457a9734eed7" class="ateam-obrazek"/>
+
+          </div>
+
+          <div class="body-karta" id="owner">
+            
+            <div class="jmeno">Suchys</div>
+            <div class="rank">Owner</div>
+            <img src="https://visage.surgeplay.com/full/512/1c8860357b7d4db9a221946109c01c8c" class="ateam-obrazek"/>
+
+          </div>
+          
+        </div>
+        <h2>Buildeři a helpeři</h2>
+        <div class="ateam">
+
+          <div class="body-karta" id="builder">
+            
+            <div class="jmeno">xbatcz</div>
+            <div class="rank">Builder</div>
+            <img src="https://visage.surgeplay.com/full/512/fe8583cbc0a04ac4bd3655fd3d5ac5cc" class="ateam-obrazek"/>
+
+          </div>
+
+          <div class="body-karta" id="builder">
+            
+            <div class="jmeno">crafersk</div>
+            <div class="rank">Builder</div>
+            <img src="https://visage.surgeplay.com/full/512/8667ba71b85a4004af54457a9734eed7" class="ateam-obrazek"/>
+
+          </div>
+
+          <div class="body-karta" id="helper">
+            
+            <div class="jmeno">prochy_20</div>
+            <div class="rank">Helper</div>
+            <img src="https://visage.surgeplay.com/full/512/d53fb2c8d84341b1888a717cd59bf6d1" class="ateam-obrazek"/>
+
+          </div>
+
+        </div>
+        <footer>
+          <p>AlteraCraft je produkt Altera.</p> 
+          <p>Tento server nevznikl ve spolupraci s Mojang, AB.</p> 
+          <p>© AlteraCraft 2023</p> 
+        </footer>
     </body>
 </html>
