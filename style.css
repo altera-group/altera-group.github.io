@@ -197,7 +197,6 @@ nav ul{
 }
 nav ul li{
     display: inline-flex;
-    
     margin: 0 5px;
     padding: 15px 5px;
     font-weight: bold;
