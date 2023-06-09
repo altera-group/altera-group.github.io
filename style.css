@@ -48,48 +48,60 @@ rect{
     text-align: center;
     background-color: rgb(190, 8, 81);
   }
-  #cosmetiky{
-    float:left;
-    margin: 4rem 15rem;
-    margin-right: 2rem;
-  }
-  .imgC{
+.imgC{
     height: 250px;
     margin: 5px 5px;
     margin-bottom: 3%;
   }
-  #shop{
-    margin-top: 5%;
-  }
 .menu{
-    display: flex;
-    float: right;
+    display: flex;  
     flex-flow: row wrap;
     row-gap: 10px;
-    justify-content: right;
-    margin: 2rem 12rem;
+    justify-content: center;
+    margin: 5% 0;
     
-       }
-.menucolu{
-    display: flex;
-    flex-flow: column wrap;
-    row-gap: 10px;
-    justify-content: right; 
-    }
+}
+
 .body-karta-menu{
+    align-items: center;
     display: flex;
     border: 1px #ffffff solid;
-    margin: 2rem 2rem;
+    
     border-radius: 25px;
-    padding: 1rem 3rem;
+    
     background-color: #18191de0;;
-    flex-direction: column;
+    flex-direction: column; 
+    
+    margin: 2rem 2rem;
     }
+.body-karta2{
+    
+    justify-content: center;
+    flex-direction: column; 
+    display: flex;
+    
+    padding: 1rem 2rem;
+}
 .socky{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 20px;
+    
+    border: 1px #ffffff solid;
+    padding: 1% 2%;
+    border-radius: 25px;
+    
+    background-color: #18191de0;;
+    
+    
+    margin: 2rem 2rem;
+    }
+    
+.ig{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
     }
  #developer{
     border-color: #335fff;
@@ -110,7 +122,16 @@ rect{
  }
 
  
-
+b{
+    display: block;
+    padding-top: 15%;
+    font-weight: bold;
+}
+b1{
+    display: block;
+    font-weight: bold;
+    
+}
 p2{
     display: block;
 
@@ -143,10 +164,10 @@ p {
     color: white;
     text-align: center;
 }
-button.ip{
+button{
     background-color: #cd115600;
-    padding: 7px 5px;
-    margin: 0 2%;
+    padding: 7px 15px;
+    margin: 2% 2%;
     border: 3px solid #cd1156;;
     border-radius: 20px;
     font-size: 20px;
@@ -155,24 +176,8 @@ button.ip{
     transition: .5s;
     
 }
-button.ip:hover{
+button:hover{
     border: 3px solid rgb(255, 91, 156);
-    transition: .5s;
-}
-button.discord{
-    background-color: #cd115600;
-    padding: 7px 1px; 
-    border: 3px solid rgb(84, 106, 185);
-    border-radius: 20px;
-    font-size: 20px;
-    text-align: center;
-    font-weight: bold;
-    color: white;
-    transition: .5s;
-    
-}
-button.discord:hover{
-    border: 3px solid rgb(150, 173, 255);
     transition: .5s;
 }
 
@@ -183,22 +188,25 @@ nav{
     width: 100%;
 }
 .logo{
-    float: left;
-    height: 70px;
-    width: 315px;
+    padding-top: 1px;
+    height: 110px;
+    width: 150px;
     display: block;
-    margin: auto auto 10px;
+    
 
 
 }
 nav ul{
-    float: right;
-    margin-right: 100px;
+    
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
 }
 nav ul li{
-    display: inline-flex;
+    display: inline-block;
     margin: 0 5px;
-    padding: 15px 5px;
+    padding: 25px 10px;
     font-weight: bold;
 }
 nav ul li a{
@@ -222,7 +230,7 @@ footer{
     border: rgb(190, 8, 81) solid 2px;
     width: 75%;
     float: right;
-    margin-top: 5%;
+    margin-top: 1%;
     margin-right: 12%;
     border-radius: 25px;
     padding: 25px;
@@ -265,11 +273,9 @@ footer{
         float: none;
         text-align: center;
         justify-content: center;
-        padding: 0;
     }
     nav{
-        display: block;
-        height: 260px;
+        margin-bottom: 5%;
     }
     nav ul{
         margin-right: 0;
@@ -277,6 +283,7 @@ footer{
     nav ul li{
         justify-self: center;
         text-align: center;
+        padding: 25px 2px;
     }
     nav ul li a{
         justify-content: center;

@@ -6,113 +6,154 @@
      <link rel="stylesheet" href="style.css">
      <title> AlteraCraft </title>
      <link rel="icon" type="image/x-icon" href="images/favicon.png">
-     <script src="https://kit.fontawesome.com/39500cc296.js" crossorigin="anonymous"></script>
+     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
      <style>
-        button{
-          float: right;
-          margin: 1% 1%;
-          background-color: #cd115600;
-          padding: 10px 10px;
-          text-transform: uppercase;
-          border: 3px solid #ffffff;;
-          border-radius: 20px;
-          font-size: 20px;
-          font-weight: bold;
-          color: rgb(255, 255, 255);  
-          transition: .5s;
-    
-          }
-          button:hover{
-              border: 3px solid rgb(255, 91, 156);
-              transition: .5s;
-          }
-        #img1{
-            background-image: url("images/im3.png");
-        }
-        #img2{
-            background-image: url("images/im4.png");
-        }
-        #img3{
-            background-image: url("images/im5.png");
-         }
+      body{
+        background-image: url(images/back2.png);
+      }
+      #hlas{
+        padding: 1rem 0;
+      }
+      .shop{
+        border-color: aqua;
+      }
+      .clist{
+        border-color: #3673b2
+      }
+      .ccraft{
+        border-color: #ff8700
+      }
+      .mclist{
+        border-color: #ff772c
+      }
+      .mcserv{
+        border-color: #1c48c5
+      }
+      .scam{
+        display: block;
+        align-self: center;
+      }
+      .igb{
+        border-color: blueviolet;
+      }
+      .tcb{
+        border-color: aquamarine;
+      }
      </style>
     </head>
     <body>
-        <img src="images/ad.png" class="logo"></images>
-        <button onclick="location.href='home.html';">Přejít na hlavní stránku <i class="fa-solid fa-angles-right" style="color: #ffffff;"></i></button>
-        <div id="demo"></div>
-        <div class="parallax" id="1"></div>
-        <rect></rect>
-        <h1>Vlastní Vymoženosti</h1>
-        <p2>
-            <p>Kosmetické věci, Residence, /home, teleportační runy,</p> 
-            <p>Votes, Shop, Loot, ...</p>
-            <rect></rect>
-        </p2>
-        <div class="parallax" id="img1"></div>
-        <rect></rect>
-        <h1>Vylepšený svět | Residence </h1>
-        <p2>
-            <p>Svět nebyl nikdy větší a hezčí. Díky residencím se nemusíš </p> 
-            <p>bát o své místečko. Neváhej, prozkoumávej a stav.</p> 
-            <rect></rect>
-        </p2>
-        <div class="parallax" id="img2"></div>
-        <rect></rect>
-        <h1>Mazlíčci | Talenty | Specializace</h1>
-        <p2>
-            <p>Ochoč si libovolného moba, vyber si jeho specialní dovednost a například si ho zavolej do boje,</p> 
-            <p>projeť se na něm, či ho využíj na loot.</p>
-            <rect></rect>
-        </p2>
-        <div class="parallax" id="img3"></div>
-        <rect></rect>
-        <h1>Strom dovedností  |  Levely |  Dungeony</h1>
-        <p2>
-            <p>Veškeré nepřátelské mobky mají úrovně, takže jsou težší na zabití.</p> 
-            <p>Ale nemusíš se obávat, přes dovednosti si můžeš zvýšit staty.</p>
+      
+        <nav>
+            <ul>
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="about.html">Team</a></li>
+                <img src="images/ad.png" class="logo"></images>
+                <li><a target="_blank" href="https://alteracraft.craftingstore.net/">Shop</a></li>
+                <li><a target="_blank" href="https://altera-group.gitbook.io/alteracraft-wiki">Wiki</a></li>
+            </ul>        
+        </nav>
+
+        
+
+        <div class="menu">
+
+          
+          
+          <div class="body-karta-menu">
             
-        </p2>
+            <h2>AlteraCraft: </h2>
+            <div class="body-karta2">
+              <div id="rest">Načítám ...</div>
+            <button class="ip" onclick="myFunction()">play.alteracraft.eu</button>
+            <button class="ip" onclick="window.open('http://185.137.94.42:25656/#');">Dynmap</button>
+            
 
+            <div id="rest2">Načítám ...</div>
+            <button class="discord" onclick="window.open('https://discord.gg/QbQmRhFGeD');">Discord</button>
+            
+            
+
+            </div>
+
+          </div>
+          
+          <div class="body-karta-menu">
+            <h2>Obchod</h2>
+  
+            <div class="body-karta2">
+              <img class="scam" src="images/cylindr.png" width="150" height="150">
+            
+              <h2>Nové balíčky</h2>
+            </div>
+            <button class="shop" onclick="window.open('https://alteracraft.craftingstore.net/');">Více...</button>
+          </div>
+            <div class="body-karta-menu">
+
+              <h2>Hlasování</h2>
+
+              <div class="body-karta2">
+              <div class="body-karta2">
+                <button class="mcserv" target="_blank" onclick="window.open('https://minecraftservery.eu/server/alteracraft');">MinecraftServery.eu</button>
+                <button class="mclist" target="_blank" onclick="window.open('https://www.minecraft-list.cz/server/alteracraft');">Minecraft-List.cz</button>
+                <button class="ccraft" target="_blank" onclick="window.open('https://czech-craft.eu/server/altera-craft-warez-custom-svet/');">CzechCraft.eu</button>
+                <button class="clist" target="_blank" onclick="window.open('https://craftlist.org/alteracraft');">Craftlist.org</button>
+            </div>
+          </div>
+            
+          </div>
+           </div>
+           <div class="menu">
+            <div class="socky">
+            <button class="tcb" onclick="window.open('https://www.tiktok.com/@alteracraft');">TikTok</button>
+            <button class="igb" onclick="window.open('https://www.instagram.com/alteracraft.eu/');">Instagram</button>
+            </div>
+           
+            
+          
+        
+          
+           
+
+          
+
+        </div>
         <footer>
-          <p>AlteraCraft © Produkt Altera.</p> 
-          <p>Nejsme nijak spříznění s Mojang, AB.</p> 
-          <p>2023</p> 
+          <p>AlteraCraft je produkt Altera.</p> 
+          <p>Tento server nevznikl ve spolupraci s Mojang, AB.</p> 
+          <p>© AlteraCraft 2023</p> 
         </footer>
-          <script>
-            // Set the date we're counting down to
-var countDownDate = new Date("Jun 9, 2023 20:00:00").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get today's date and time
-  var now = new Date().getTime();
-
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  // Display the result in the element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-
-  // If the count down is finished, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
+        <script>
             function myFunction() {
              // Copy the text inside the text field
             navigator.clipboard.writeText("play.alteracraft.eu");
             alert("IP adresa serveru byla zkopírována");
           } 
+          //based on a pen by @robinselmer
+var url = "https://api.minetools.eu/ping/185.137.94.42/25617";
+ 
+ $.getJSON(url, function(r) {
+     //data is the JSON string
+  if(r.error){
+     $('#rest').html('<b1>Server Offline</b1>');
+    return false;
+  } 
+ var pl = '';
+   $('#rest').html('<b1>Online hráči: '+r.players.online) +'</b1>';
+
+     
+ });
+ var url2 = "https://discord.com/api/guilds/426690734129938434/widget.json";
+ $.getJSON(url2, function(d) {
+     //data is the JSON string
+  if(d.error){
+     $('#rest2').html('Server Offline');
+    return false;
+  } 
+ var pld = '';
+   $('#rest2').html('<h2>DISCORD:</h2> <b>Uživatelé online: '+d.members.length) +'</b>';
+
+     
+ });
         </script>
     </body>
 </html>
