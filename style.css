@@ -1,330 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300;800&display=swap');
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box; 
     text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-    letter-spacing: -1px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+}
+h{
+  font-size: 35px;
+  font-weight: bold;
 }
 
-
+.wrapper{
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    
+    
+}
 body{
-    background-color: #212227;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    background-color: rgb(29, 29, 31);
+    color: white;
+    font-size: 18px;
+    font-family: 'Geologica', sans-serif;
 }
-rect{
-    display: inline-block;
-    line-height: 80px;
-    margin: 20px 30px;
+body::-webkit-scrollbar{
+    width: 0.25rem;
 }
-.parallax {
-    /* The image used */
-    background-image: url("images/im2.png");
-  
-    /* Set a specific height */
-    min-height: 200px;
-    padding-top: 30%;
-  
-    /* Create the parallax scrolling effect */
-    background-attachment:fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:cover;
-  }
-  #demo{
-    display: inline-block;
+body::-webkit-scrollbar-track{
+    background-color: #F94C85;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #F94C85;
+}
+.nav{
+    
+    transition: 0.5s;
+}
+.content{
     width: 100%;
-    margin: 10px 0;
-    padding-bottom: 5px;
-    justify-content: center;
-    font-size: 25px;
-    font-weight: bold;
-    color: rgb(255, 255, 255);
-    text-shadow: 2px #212227;
-    text-align: center;
-    background-color: rgb(190, 8, 81);
-  }
-.imgC{
-    height: 250px;
-    margin: 5px 5px;
-    margin-bottom: 3%;
-  }
-.menu{
-    display: flex;  
-    flex-flow: row wrap;
-    row-gap: 10px;
-    justify-content: center;
-    margin: 5% 0;
+    min-height: 100vh;
+    padding-bottom: 50px; 
     
 }
-
-.body-karta-menu{
-    align-items: center;
-    display: flex;
-    border: 1px #ffffff solid;
-    
-    border-radius: 25px;
-    
-    background-color: #18191de0;;
-    flex-direction: column; 
-    
-    margin: 2rem 2rem;
-    }
-.body-karta2{
-    
-    justify-content: center;
-    flex-direction: column; 
-    display: flex;
-    
-    padding: 1rem 2rem;
-}
-.socky{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    
-    border: 1px #ffffff solid;
-    padding: 1% 2%;
-    border-radius: 25px;
-    
-    background-color: #18191de0;;
-    
-    
-    margin: 2rem 2rem;
-    }
-    
-.ig{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    
-    }
- #developer{
-    border-color: #335fff;
- }
- #builder{
-    border-color: #f1ff33;
- }
- #helper{
-    border-color: #44ff33;
- }
- #rest, #rest2{
-    display: block;
-    font-size: 20px;
-    color: white;
-    text-align: center;
-    margin: 10px 10px;
-    float: left;
- }
-
- 
-b{
-    display: block;
-    padding-top: 15%;
-    font-weight: bold;
-}
-b1{
-    display: block;
-    font-weight: bold;
-    
-}
-p2{
-    display: block;
-
-    margin: 50px 10px;
-}
-
-h1{ 
-    font-size: 50px;
-    font-weight: bold;
-    color: rgb(190, 8, 81);
-    text-shadow: 2px #212227;
-    line-height: 80px;
-    text-align: center;
-}
-h2{
-    font-size: 35px;
-    font-weight: bold;
-    color: rgb(255, 255, 255);
-    text-shadow: 2px #212227;
-    line-height: 60px;
-    text-align: center;
-    margin-top: 1%;
-    border: none;
-    border-radius: 5px;
-    border-bottom: 1px rgb(253, 255, 255) solid;
-    
-}
-p {
-    font-size: 30px;
-    color: white;
-    text-align: center;
-}
-button{
-    background-color: #cd115600;
-    padding: 7px 15px;
-    margin: 2% 2%;
-    border: 3px solid #cd1156;;
-    border-radius: 20px;
-    font-size: 20px;
-    font-weight: bold;
-    color: rgb(255, 255, 255);  
-    transition: .5s;
-    
-}
-button:hover{
-    border: 3px solid rgb(255, 91, 156);
-    transition: .5s;
-}
-
 nav{
-    
-    background-color: rgb(22, 29, 30);
-    height: 80px;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background-color: #29292c;
+    min-width: 250px;
+    max-width: 250px;
+    align-items: center;
 }
 .logo{
-    padding-top: 1px;
-    height: 110px;
-    width: 150px;
-    display: block;
-    
-
-
+    padding-top: 15%;
+    padding-bottom: 0%;
+    width: 215px;
 }
-nav ul{
+ul {
     
+    justify-content: center;
+    align-items: center;
+  }
+  
+  li a {
+    display: block;
+    color:white;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 8px 0px;
+    text-decoration: none;
+    width: 90%;
+    transition: 0.2s;
+  }
+  
+  /* Change the link color on hover */
+  li a:hover {
+    background-color: #1AADFF;
+    width: 100%;
+    border-radius: 2px;
+    transition: 0.2s;
+  }
+  li a.active{
+    background-color: #F94C85;
+    width: 100%;
+  }
+  .ikonka-menu{
+    float: left;
+    margin-right: .5rem;
+    margin-left: 2.5rem;
+    line-height: 0;
+    width: 31px;
+    height: 31px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .text-menu{
+    display: flexbox;
+    line-height: 1.6;
+    color:white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 8px 0px;
+  }
+  div.separator{
+    
+    height: 1px;
+    width: 80%;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    background-color: aliceblue;
+  }
+  .ipcont {
+    display: block;
+    color:white;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 15px 0px;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.2s;
+  }
+  .ipcont:hover{
+    color: #8fd8ff;
+    transition: 0.2s;
+  }
+  #iptext{
+    font-size: 25px;
+  }
+  .ip{
+    font-size: 17px;
+    font-weight: normal;
+  }
+  .ip:hover{
+    cursor: pointer;
+  }
+  #iptext:hover{
+    cursor: pointer;
+  }
+  .hide{
+    margin-left: -250px;
+    background-color: #29292c00;
+    transition: 0.5s;
+  }
+  .toggle_bar{
     display: flex;
     width: 100%;
-    justify-content: center;
-
-}
-nav ul li{
-    display: inline-block;
-    margin: 0 5px;
-    padding: 25px 10px;
-    font-weight: bold;
-}
-nav ul li a{
-    color: white;
-    font-size: 20px;
-    padding: 13px 13px;
-    border-radius: 15px;
-    text-transform: uppercase;
-    transition: .5s;
-}
-a.active,a:hover{
-background-color: #cd1140;;
-transition: .5s;
-}
-footer{
-    position: sticky;
-    top: 100%;
-    margin-bottom: 10px;
-    background-color:  rgb(22, 29, 30);
-    display: block;
-    border: rgb(190, 8, 81) solid 2px;
-    width: 75%;
-    float: right;
-    margin-top: 1%;
-    margin-right: 12%;
+    padding-bottom: 1%;
+  }
+  .toggle{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    width: 40px;
+    height: 40px;
+    transition: 0.5s;
+  }
+  .toggle_anim{
     border-radius: 25px;
-    padding: 25px;
-}
+    background-color:#E1306C;
+    transition: 0.5s;
 
-@media screen and (max-width: 1470px) {
-    .logo{
-        padding: 0 10px;
-    }
-    nav ul{
-        margin-right: 0;
-    }
-    nav ul li a{ 
-        padding: 7px 7px;
-    }
-    .button.discord{
-        padding: 3px 3px;
-        justify-self: center;
-    }
-    button.ip{
-        padding: 3px 3px;
-        justify-self: center;
-    }
-    .menu{
-        justify-content: center;
-        row-gap: 2px;
-        margin-top: 5rem;
-        }
-    .menucolu{
-            gap: 2px;
-            justify-content: center;
-        }
-    .body-karta-menu{
-            margin: 0 0;
-            margin-bottom: 10px;
-        }
-}
-@media screen and (max-width: 500px) {
-    .logo{
-        float: none;
-        text-align: center;
-        justify-content: center;
-    }
-    nav{
-        margin-bottom: 5%;
-    }
-    nav ul{
-        margin-right: 0;
-        }
-    nav ul li{
-        justify-self: center;
-        text-align: center;
-        padding: 25px 2px;
-    }
-    nav ul li a{
-        justify-content: center;
-        width: 100%;
-        font-size: 18px;
-    }
-    .button.discord{
-        justify-self: center;
-    }
-    button.ip{
-        justify-self: center;
-    }
-    .parallax{
-        background-size: 150% 75%;
-        padding-top:0px;
-    }
-    h1{
-        font-size: 35px;
-    }
-    p{
-        font-size: 20px;
-    }
-    rect{
-        line-height: 50px;
-    }
-     .menu{
+  }
+  footer{
+    
+    text-align: center;
+  }
+
+  .socky{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    display: flex;
+    height: 30px;
+    flex-direction: row;
+    flex-basis: 10;
     justify-content: center;
-    margin: 0 0;
+  }
+  button{
+    border:none;
+    background-color: rgba(0, 0, 0, 0);
+    width: 40px;
+    height: 40px;
+    transition: 0.5s;
+    border-radius: 15px;
+  }
+  .instagram:hover{
+    background-color:#E1306C;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  .discord:hover{
+    background-color: #738adb;
+    border-radius: 25px;  
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  .tiktok:hover{
+    background-color:#69c9d0;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  .kategorie{
+    width: 250px;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 1%;
+  }
+
+  /*karta*/
+  .row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: -15px;
+  margin-left: -15px;
+  }
+  .karta{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    background-color: #29292c;
+    margin: 10px 10px;
+    border-radius: 10px;
+    padding: 0 5px;
+  }
+  .header_karta{
+    color:#1AADFF;
+    padding-top: 10%;
+    font-size: 25px;
+    justify-self: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .body_karta{
+    flex: 1 1 auto;
+    text-align: center;
+    min-height: 1px;
+    padding: 1.25rem;
+  }
+  .footer_karta{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+  }
+  .shop_but{
+    color:white;
+    background-color: #1AADFF;
+    align-self: right;
+    text-align: center;
+    width: auto;
+    height: auto;
+    padding: 2px 10px;
+    margin-left: 10%;
+    font-size: 22px;
+    border-radius: 10px;
+  }
+  .shop_but:hover{
+    cursor: pointer;
+    background-color: #006ca7;
+  }
+  .a_karta{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    height: fit-content;
+    background-color: #29292c;
+    margin: 10px 10px;
+    border-radius: 10px;
+    padding: 0 5px;
+  }
+  .header_karta2{
+    color:#ffffff;
+    padding-top: 10%;
+    font-size: 25px;
+    justify-self: center;
+    text-align: center;
+    font-weight: bold;
+  }
+  #rankimg{
+    width: 75px;
+    padding-top: 2%;
+    align-self: center;
+  }
+  #ateamimg{
+    width: 175px;
+  }
+  .rules{
+    width: fit-content;
+    font-size: 20px;
+    text-align: left;
+    margin:2% 3% ;
+    padding: 1% 1%;
+    
+    background-color: #29292c;
+  }
+  .unban{
+    display: flex;
+    align-items: center;
+  }
+  .discord_un{
+    font-weight: bold;
+    font-size: 25px;
+    margin:2% 35%;
+    padding: 5px 20px;
+    color: #ffffff;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    background-color: #738adb;
+    border-radius: 25px;  
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  #news{
+    display: block;
+    align-self: center;
+    width: 475px;
+    border: 5px solid #35353c;
+  }
+  .nheader{
+    color:#ffffff;
+    padding-top: 5%;
+    font-size: 30px;
+    justify-self: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .n_karta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 480px;
+    height: fit-content;
+    background-color: #29292c;
+    margin: 10px 10px;
+    border-radius: 10px;
+    padding: 0 5px;
+  }
+  .cas{
+    color:#ffffff;
+    text-align: right;
+    padding: 3% 5%;
+  }
+  
+  @media (max-width: 900px){
+    nav{
+      margin-right: 15px;
     }
-    .menucolu{
-        gap: 2px;
-        justify-content: center;
+    .kategorie{
+      width: 150px;
     }
-    .body-karta-menu{
-        margin: 15px 35px;
-        margin-bottom: 10px;
-    }
-    .imgC{
-        height: 150px;
-    }
-    #cosmetiky{
-        margin: 0 0;
-    }
-}
+  }
