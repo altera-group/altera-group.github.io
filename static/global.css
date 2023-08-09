@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    height: fit-content;
+}
+
+body {
+    background-color: rgb(29, 29, 31);
+    color: white;
+    font-size: 18px;
+    font-family: 'Geologica', sans-serif;
+}
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #F94C85;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #F94C85;
+}
+
+.nav {
+    transition: 0.5s;
+}
+
+.content {
+    width: 100%;
+    /* min-height: 100vh; */
+    margin-top: 1.5rem;
+    padding-bottom: 50px;
+
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background-color: #29292c;
+    min-width: 250px;
+    max-width: 250px;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.logo {
+    padding-top: 15%;
+    padding-bottom: 0%;
+    width: 215px;
+    /* text-align: center; */
+}
+
+ul {
+
+    justify-content: center;
+    align-items: center;
+}
+
+li a {
+    display: block;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 8px 0px;
+    text-decoration: none;
+    width: 90%;
+    transition: 0.2s;
+}
+
+a {
+    color: #1AADFF;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: #1AADFF;
+    width: 100%;
+    border-radius: 2px;
+    transition: 0.2s;
+}
+
+li a.active {
+    background-color: #F94C85;
+    width: 100%;
+}
+
+.ikonka-menu {
+    float: left;
+    margin-right: .5rem;
+    margin-left: 2.5rem;
+    line-height: 0;
+    width: 31px;
+    height: 31px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-menu {
+    display: flexbox;
+    line-height: 1.6;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 8px 0px;
+}
+
+div.separator {
+    display: flex;
+    height: 1px;
+    width: 80%;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    background-color: aliceblue;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ipcont {
+    display: block;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 15px 0px;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.ipcont:hover {
+    color: #8fd8ff;
+    transition: 0.2s;
+}
+
+#iptext {
+    font-size: 25px;
+}
+
+.ip {
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.ip:hover {
+    cursor: pointer;
+}
+
+#iptext:hover {
+    cursor: pointer;
+}
+
+.hide {
+    margin-left: -250px;
+    background-color: #29292c00;
+    transition: 0.5s;
+}
+
+.toggle_bar {
+    display: flex;
+    width: 100%;
+    padding-bottom: 1%;
+}
+
+.toggle {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    width: 40px;
+    height: 40px;
+    transition: 0.5s;
+}
+
+.toggle_anim {
+    border-radius: 25px;
+    background-color: #E1306C;
+    transition: 0.5s;
+
+}
+
+footer {
+
+    text-align: center;
+}
+
+.socky {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    display: flex;
+    height: 30px;
+    flex-direction: row;
+    flex-basis: 10;
+    justify-content: center;
+}
+
+button {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    width: 40px;
+    height: 40px;
+    transition: 0.5s;
+    border-radius: 15px;
+}
+
+.instagram:hover {
+    background-color: #E1306C;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.discord:hover {
+    background-color: #738adb;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.github:hover {
+    background-color: #b0adae;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.website:hover {
+    background-color: #15b10d;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.tiktok:hover {
+    background-color: #69c9d0;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.kategorie {
+    width: 250px;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 1%;
+}
+
+/*karta*/
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.karta {
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    width: 250px;
+    height: 250px;
+    background-color: #29292c;
+    margin: 10px 10px;
+    border-radius: 10px;
+    padding: 0 5px;
+}
+
+.header_karta {
+    color: #1AADFF;
+    padding-top: 10%;
+    font-size: 25px;
+    justify-self: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.body_karta {
+    flex: 1 1 auto;
+    text-align: center;
+    min-height: 1px;
+    padding: 1.25rem;
+}
+
+.footer_karta {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: end;
+    position: sticky;
+    top: 100%;
+    /* margin-bottom: 5%; */
+}
+
+.shop_but {
+    color: white;
+    background-color: #1AADFF;
+    align-self: right;
+    text-align: center;
+    width: auto;
+    height: auto;
+    padding: 2px 10px;
+    margin-left: 10%;
+    font-size: 22px;
+    border-radius: 10px;
+}
+
+.shop_but:hover {
+    cursor: pointer;
+    background-color: #006ca7;
+}
+
+.a_karta {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    height: fit-content;
+    background-color: #29292c;
+    margin: 10px 10px;
+    border-radius: 10px;
+    padding: 0 5px;
+}
+
+.header_karta2 {
+    color: #ffffff;
+    padding-top: 10%;
+    font-size: 25px;
+    justify-self: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+#rankimg {
+    width: 75px;
+    padding-top: 2%;
+    align-self: center;
+}
+
+#ateamimg {
+    width: 175px;
+}
+
+.rules {
+    /* min-width: 100rem; */
+    /* min-height: 52rem; */
+    width: fit-content;
+    font-size: 20px;
+    text-align: left;
+    margin: 2% 3%;
+    padding: 1% 1%;
+    border-radius: 10px;
+
+    background-color: #29292c;
+}
+
+.unban {
+    display: flex;
+    align-items: center;
+}
+
+.discord_un {
+    font-weight: bold;
+    font-size: 25px;
+    margin: 2% 35%;
+    padding: 5px 20px;
+    color: #ffffff;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    background-color: #738adb;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#news {
+    display: block;
+    align-self: center;
+    width: 475px;
+    border: 5px solid #35353c;
+}
+
+.nheader {
+    color: #ffffff;
+    padding-top: 5%;
+    font-size: 30px;
+    justify-self: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.n_karta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 480px;
+    height: fit-content;
+    background-color: #29292c;
+    margin: 10px 10px;
+    border-radius: 10px;
+    padding: 0 5px;
+}
+
+.cas {
+    color: #ffffff;
+    text-align: right;
+    padding: 3% 5%;
+}
+
+@media (max-width: 900px) {
+    nav {
+        margin-right: 15px;
+    }
+
+    .kategorie {
+        width: 150px;
+    }
+}
